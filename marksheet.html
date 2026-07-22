@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>STUDENT MARKSHEET</h1>
+    <table class="info-table">
+        <tr>
+            <th>Student Name:</th>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <th>Father's Name:</th>
+            <td id="fathername"></td>
+        </tr>
+        <tr>
+            <th>Roll Number:</th>
+            <td id="roll"></td>
+        </tr>
+        <tr>
+            <th>Class:</th>
+            <td id="class"></td>
+        </tr>
+    </table>
+    <br>
+    <table class="marks-table">
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+        </tr>
+        <tr>
+            <td>English:</td>
+            <td>100</td>
+            <td id="eng"></td>
+        </tr>
+        <tr>
+            <td>Urdu:</td>
+            <td>100</td>
+            <td id="urdu"></td>
+        </tr>
+        <tr>
+            <td>Mathematics:</td>
+            <td>100</td>
+            <td id="math"></td>
+        </tr>
+        <tr>
+            <td>Physics:</td>
+            <td>100</td>
+            <td id="phy"></td>
+        </tr>
+        <tr>
+            <td>Computer:</td>
+            <td>100</td>
+            <td id="comp"></td>
+        </tr>
+        <tr>
+            <td>Chemistry:</td>
+            <td>100</td>
+            <td id="chem"></td>
+        </tr>
+        <tr>
+            <td>Islamiyat:</td>
+            <td>100</td>
+            <td id="isl"></td>
+        </tr>
+        <tr>
+            <td>Pak Studies:</td>
+            <td>100</td>
+            <td id="pak"></td>
+        </tr>
+    </table>
+    <br>
+    <table class="result-table">
+        <tr>
+            <th>Total Marks:</th>
+            <td id="total"></td>
+        </tr>
+        <tr>
+            <th>Obtained Marks:</th>
+            <td id="obtained"></td>
+        </tr>
+        <tr>
+            <th>Percentage:</th>
+            <td id="percentage"></td>
+        </tr>
+        <tr>
+            <th>Grade:</th>
+            <td id="grade"></td>
+        </tr>
+        <tr>
+            <th>Result:</th>
+            <td id="result"></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="window.print()">Print Marksheet</button>
+</div>
+<script>
+document.getElementById("name").innerHTML = localStorage.getItem("name");
+document.getElementById("fathername").innerHTML = localStorage.getItem("fathername");
+document.getElementById("roll").innerHTML = localStorage.getItem("roll");
+document.getElementById("class").innerHTML = localStorage.getItem("class");
+document.getElementById("eng").innerHTML = localStorage.getItem("eng");
+document.getElementById("urdu").innerHTML = localStorage.getItem("urdu");
+document.getElementById("math").innerHTML = localStorage.getItem("math");
+document.getElementById("phy").innerHTML = localStorage.getItem("phy");
+document.getElementById("comp").innerHTML = localStorage.getItem("comp");
+document.getElementById("chem").innerHTML = localStorage.getItem("chem");
+document.getElementById("isl").innerHTML = localStorage.getItem("isl");
+document.getElementById("pak").innerHTML = localStorage.getItem("pak");
+document.getElementById("total").innerHTML = localStorage.getItem("total");
+document.getElementById("obtained").innerHTML = localStorage.getItem("obtained");
+document.getElementById("percentage").innerHTML = localStorage.getItem("percentage") + "%";
+document.getElementById("grade").innerHTML = localStorage.getItem("grade");
+document.getElementById("result").innerHTML = localStorage.getItem("result");
+</script>
+</body>
+</html>
